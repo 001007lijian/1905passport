@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 
-
-Route::post('/api/user/reg','UserController@reg');     //注册
-Route::post('/api/user/login','UserController@login'); // 登录
-Route::get('/api/show/time','UserController@showTime'); // 获取数据
+Route::post('pass/reg','Passport\PassController@reg');
+Route::post('pass/login','Passport\PassController@login');
+Route::get('pass/Userinfo','Passport\PassController@Userinfo');
+Route::post('gitpush','Passport\PassController@gitpush');
