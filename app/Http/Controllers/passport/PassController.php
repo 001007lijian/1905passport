@@ -122,7 +122,7 @@ class PassController extends Controller
             return $json;
         }
         $token=$_SERVER['HTTP_TOKEN']??'';
-        // die;
+    
         // $token=$_GET['token']??'';
         if(empty($token)){
             $json=[
